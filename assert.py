@@ -29,17 +29,27 @@
 #     print("Done")
 #
 #
-#
-# try:
-#     enternumber=int(input("enter a number "))
-#     assert enternumber%2==0
-#     print("its even number")
-# except:
-#     print("thats odd")
-# finally:
-#     print("Done")
 
-def test_dvsn():
-    num1=int(input("enter a number"))
-    num2=int(input("enter a number"))
-    assert print("div=",num1/num2, "addn=",num1+num2,"mult=",num1*num2), "number should not be zero"
+try:
+    enternumber=int(input("enter a number "))
+    assert enternumber%2==0
+    print("its even number")
+except:
+    print("thats odd")
+finally:
+    print("Done")
+
+# def test_dvsn():
+#     num1=int(input("enter a number"))
+#     num2=int(input("enter a number"))
+#     assert print("div=",num1/num2, "addn=",num1+num2,"mult=",num1*num2), "number should not be zero"
+
+def test_1():
+    a=5
+    b=0
+    try:
+        print(a/b)
+    except:
+        print("numbers should not be zero")
+    finally:
+        print("done")
