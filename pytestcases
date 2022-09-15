@@ -1,0 +1,61 @@
+import pytest
+
+
+# def test_name():
+#     details = {"name": "ravi", "age": 25, "gender": "single"}
+#     name_var = details["name"]
+#     assert type(name_var) == str, " change the data type"
+#
+#
+# # def test_name1():
+# #     details = {"name": "ravi", "age": 25, "gender": "single"}
+# #     assert type(details["name"]) == int, " change the data type"
+#
+# def test_name1():
+#     details = {"name": "ravi", "age": 25, "gender": "single"}
+#     assert type(details["name"]) == str, " change the data type"
+#
+#
+# def test_age():
+#     details = {"name": "ravi", "age": 25, "gender": "single"}
+#     assert type(details["age"]) == str, " change the data type"
+#
+#
+# def test_gender():
+#     details = {"name": "ravi", "age": 25, "gender": "single"}
+#     assert type(details["gender"]) == str, " change the data type"
+#
+#
+# def test_frndnature():
+#     nature = {"anil": "loverboy", "phani": "buisinessman", "murthi": "helping", "shivaji": "innocent"}
+#     assert nature["anil"] == "loverboy", "its wrong"
+
+
+# def test_father_br():
+#     relations = {"Father": "AAA", "Mother": "BBB", "Brother": "CCC", "Sister": "DDD", "Friend": "EEE"}
+#     assert (relations["Father"] == "AAA" and relations["Brother"] == "DDD")
+
+
+# def test_father_Sis():
+#     relations = {"Father": "AAA", "Mother": "BBB", "Brother": "CCC", "Sister": "DDD", "Friend": "EEE"}
+#     assert (relations["Father"] == "AAA" or relations["Sister"] == "ccc")
+
+#
+# def test_father_Sis():
+#     relations = {"Father": "AAA", "Mother": "BBB", "Brother": "CCC", "Sister": "DDD", "Friend": "EEE"}
+#     assert (relations["Sister"] == "ccc" or relations["Father"] == "AAA" )
+
+
+
+# def test_father_Sis_friend():
+#     relations = {"Father": "AAA", "Mother": "BBB", "Brother": "CCC", "Sister": "DDD", "Friend": "EEE"}
+#     assert (relations["Sister"] == "ccc" or relations["Father"] == "AAA" and relations["Friend"] =="EEE")
+
+# def test_fatherSis_friend():
+#     relations = {"Father": "AAA", "Mother": "BBB", "Brother": "CCC", "Sister": "DDD", "Friend": "EEE"}
+#     assert ((relations["Sister"] == "ccc" or relations["Father"] == "AAA") and relations["Friend"] =="EEE")
+
+
+def test_loveinn_busin():
+    nature = {"anil": "loverboy", "phani": "buisinessman", "murthi": "helping", "shivaji": "innocent"}
+    assert ((nature["anil"]=="loverboy" or nature["shivaji"]=="helping") and nature["phani"]=="loverboy")
